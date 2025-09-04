@@ -1,4 +1,43 @@
 body{
     margin: 0;
     padding: 0;
+    
+}
+
+header, footer{
+    height: 120px;
+    background-color: #FF8000;
+    display: flex;
+    align-items: center;
+    padding: 0 90px;
+}
+
+.img_header{
+    height: 50px;
+}
+
+main{
+    display: flex;
+}
+  
+.basket_container, .dishes_container{
+    height: 100vh;
+    border: solid 2px black;
+}
+
+.basket{
+   min-height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 10px;
+}
+
+.dishes_container{
+   width: calc(100% - 300px);
+   background-image: url("assets/images/pasta-3547078_1280.jpg");
+}
+
+.basket_container{
+    width: 300px;
+    flex-grow: 1;
 }
