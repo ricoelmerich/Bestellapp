@@ -16,31 +16,32 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.img_header{
+.img-header{
     height: 50px;
 }
 
 main{
     display: flex;
     padding: 90px 0 0 0;
-
 }
   
-.basket_container, .dishes_container{
+.basket-container, .dishes-container{
     height: 100vh;
     border: solid 2px black;
 }
 
-.dishes_container{
+.dishes-container{
    width: calc(100% - 300px);
    background-image: url("assets/images/pasta-3547078_1280.jpg");
    background-size: cover;
    background-position: center;
 }
 
-.basket_container{
+.basket-container{
     width: 300px;
     flex-grow: 1;
 }
