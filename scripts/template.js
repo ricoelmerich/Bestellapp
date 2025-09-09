@@ -1,3 +1,5 @@
-function categoryTemplate(categoryIndex) {
-    return `<h3>${dishes[categoryIndex].category}</h3>`
+function categoryTemplate(dishesIndex) {
+    return `<div class="background-color-white">
+    <h3>${dishes[dishesIndex].category}</h3>
+    </div>`
 }

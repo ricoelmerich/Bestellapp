@@ -45,6 +45,14 @@ main{
    background-position: center;
 }
 
+h3{
+    font-size: 48px;
+}
+
+.background-color-white{
+    background-color: white;
+}
+
 .basket-container{
     width: 300px;
     flex-grow: 1;
