@@ -10,10 +10,12 @@ function renderCategories() {
         let actualCategory = dishes[dishesIndex].category;
 
         if (shownCategory.indexOf(actualCategory) === -1) {
-            
-        
+
         categoryRef.innerHTML += categoryTemplate(dishesIndex);
         shownCategory.push(actualCategory);
         }
+
+        categoryRef.innerHTML += dishTemplate(dishesIndex);
     }
 }
+
