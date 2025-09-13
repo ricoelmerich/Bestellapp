@@ -28,6 +28,15 @@ header{
     filter: brightness(0) invert(1);
 }
 
+ .button{
+    width: 30px;
+ }
+
+ button{
+    background-color: white;
+    border: none;
+ }
+
 main{
     display: flex;
     padding: 90px 0 0 0;
@@ -47,6 +56,14 @@ main{
 
 h3{
     font-size: 48px;
+    margin: 0;
+    padding: 60px 0 48px 0;
+}
+
+.dishes{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 16px;
 }
 
 .background-color-white{

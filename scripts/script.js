@@ -6,8 +6,8 @@ function renderCategories() {
     const categoryRef = document.getElementById('dishes-container');
     let shownCategory = [];
 
-    for (let dishesIndex = 0; dishesIndex < dishes.length; dishesIndex++) {
-        let actualCategory = dishes[dishesIndex].category;
+    for (let dishesIndex = 0; dishesIndex < myDishes.length; dishesIndex++) {
+        let actualCategory = myDishes[dishesIndex].category;
 
         if (shownCategory.indexOf(actualCategory) === -1) {
 
@@ -17,5 +17,10 @@ function renderCategories() {
 
         categoryRef.innerHTML += dishTemplate(dishesIndex);
     }
+}
+
+function addToBasket(dishesIndex) {
+    let basketRef = document.getElementById('basket');
+    basketRef.innerHTML += basketTemplate(dishesIndex);
 }
 

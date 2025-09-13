@@ -1,4 +1,4 @@
-let dishes = [
+let myDishes = [
       {
         "category": "pizza",
         "name": "Margherita",
