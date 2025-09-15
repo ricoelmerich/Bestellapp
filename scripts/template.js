@@ -6,6 +6,11 @@ function categoryTemplate(dishesIndex) {
 
 function dishTemplate(dishesIndex) {
     return`<div class="background-color-white dishes">${myDishes[dishesIndex].name}
-    <button onclick="addToBasket(dishesIndex)"><img src="assets/favicon/+.png" class="button" alt=""></button>
+    <button onclick="addToBasket(${dishesIndex})"><img src="assets/favicon/+.png" class="button" alt=""></button>
+    </div>`
+}
+
+function selectedDishTemplate (dishesIndex){
+    return `<div class="selectedDish">${myDishes[dishesIndex].name}, ${myDishes[dishesIndex].price}
     </div>`
 }
