@@ -42,14 +42,38 @@ function addToBasket(dishesIndex) {
     renderBasket();
 }
 
+function increaseQuantity(dishesIndex) {
+    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+        if (basket[basketIndex].index === dishesIndex) {
+            basket[basketIndex].quantity++;
+            break;
+        }
+    }
+    renderBasket();
+}
+
+function decreaseQuantity(dishesIndex) {
+    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+        if (basket[basketIndex].index === dishesIndex) {
+            basket[basketIndex].quantity--;
+            if (basket[basketIndex].quantity <= 0) {
+                basket.splice(basketIndex, 1); // Gericht entfernen
+            }
+            break;
+        }
+    }
+    renderBasket();
+}
+
+
 function renderBasket() {
-    let basketRef = document.getElementById('basket');
-    basketRef.innerHTML = "";
+    let basketItemsRef = document.getElementById('basket-items');
+    basketItemsRef.innerHTML = "";
 
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
         let item = basket[indexBasket]
         
-        basketRef.innerHTML += selectedDishTemplate(item);
+        basketItemsRef.innerHTML += selectedDishTemplate(item);
     }
 }
 
