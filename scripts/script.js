@@ -33,21 +33,23 @@ function addToBasket(dishesIndex) {
     if (!found) {
         basket.push({
             index: dishesIndex,
+            name: myDishes[dishesIndex].name,
+            price: myDishes[dishesIndex].price,
             quantity: 1
         });
     }
 
-    renderBasket(dishesIndex);
+    renderBasket();
 }
 
-function renderBasket(dishesIndex) {
+function renderBasket() {
     let basketRef = document.getElementById('basket');
-    basketRef.innerHTML = ""; 
+    basketRef.innerHTML = "";
 
-    for (let i = 0; i < basket.length; i++) {
-        let item = basket[i];
+    for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
+        let item = basket[indexBasket]
         
-        basketRef.innerHTML += selectedDishTemplate(dishesIndex);
+        basketRef.innerHTML += selectedDishTemplate(item);
     }
 }
 

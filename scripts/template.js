@@ -10,7 +10,8 @@ function dishTemplate(dishesIndex) {
     </div>`
 }
 
-function selectedDishTemplate (dishesIndex){
-    return `<div class="selectedDish">${myDishes[dishesIndex].name}, ${myDishes[dishesIndex].price}
+function selectedDishTemplate (item){
+    return `<div class="selectedDish">${item.name}, ${item.price}
+    <span class="quantity">x €${item.quantity}</span>
     </div>`
 }
