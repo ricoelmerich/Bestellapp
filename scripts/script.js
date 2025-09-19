@@ -68,13 +68,18 @@ function decreaseQuantity(dishesIndex) {
 
 function renderBasket() {
     let basketItemsRef = document.getElementById('basket-items');
+    let basketTotalRef = document.getElementById('basket-total');
     basketItemsRef.innerHTML = "";
 
-    for (let indexBasket = 0; indexBasket < basket.length; indexBasket++) {
-        let item = basket[indexBasket]
-        
+    let total = 0;
+
+    for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
+        let item = basket[basketIndex];
         basketItemsRef.innerHTML += selectedDishTemplate(item);
+        total += item.price * item.quantity;
     }
+
+    basketTotalRef.innerHTML = `<strong>Gesamtpreis:</strong> ${total} €`;
 }
 
 
