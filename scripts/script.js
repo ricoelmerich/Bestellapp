@@ -1,5 +1,7 @@
 let basket = [];
 
+
+
 function init() {
     renderCategories();
 }
@@ -11,9 +13,9 @@ function renderCategories() {
     for (let dishesIndex = 0; dishesIndex < myDishes.length; dishesIndex++) {
         let actualCategory = myDishes[dishesIndex].category;
 
-        if (shownCategory.indexOf(actualCategory) === -1) {
-
-        categoryRef.innerHTML += categoryTemplate(dishesIndex);
+        if (shownCategory.indexOf(actualCategory) === -1){
+            let imagePath = categoryImages[actualCategory]; 
+        categoryRef.innerHTML += categoryTemplate(dishesIndex, imagePath);
         shownCategory.push(actualCategory);
         }
 

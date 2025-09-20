@@ -63,3 +63,9 @@ let myDishes = [
         "quantity": 0
       }
     ];
+
+     let categoryImages = {
+        "Pizza": "./assets/images/pasta-4625962_640.jpg",
+        "Pasta": "./iassets/images/pasta-4625962_640.jpg",
+        "Salat": "./assets/images/salad-7222402_640.jpg"
+    };
