@@ -88,4 +88,13 @@ function renderBasket() {
     basketTotalRef.innerHTML = `<strong>Gesamtpreis:</strong> ${total} €`;
 }
 
+function order() {
+     const dishesContainer = document.getElementById('dishes-container')
+
+     if (dishesContainer.innerHTML !== "") {
+        dishesContainer.innerHTML = "";
+        dishesContainer.innerHTML = "danke für die Bestellung";
+     }
+}
+
 

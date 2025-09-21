@@ -56,6 +56,11 @@ main{
    width: calc(100% - 300px);
 }
 
+.category-image{
+   width: 50%;
+   height: 200px;
+}
+
 h3{
     font-size: 48px;
     margin: 0;
