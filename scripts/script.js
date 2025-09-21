@@ -15,12 +15,16 @@ function renderCategories() {
 
         if (shownCategory.indexOf(actualCategory) === -1){
             let imagePath = categoryImages[actualCategory]; 
-        categoryRef.innerHTML += categoryTemplate(dishesIndex, imagePath);
+        categoryRef.innerHTML += categoryTemplate(actualCategory, imagePath);
         shownCategory.push(actualCategory);
         }
 
         categoryRef.innerHTML += dishTemplate(dishesIndex);
     }
+}
+
+function capitalize(word) {                     
+    return word.charAt(0).toUpperCase() + word.slice(1);         // Kategorien groß schreiben 
 }
 
 function addToBasket(dishesIndex) {

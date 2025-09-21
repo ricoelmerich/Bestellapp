@@ -65,7 +65,7 @@ let myDishes = [
     ];
 
      let categoryImages = {
-        "Pizza": "./assets/images/pasta-4625962_640.jpg",
-        "Pasta": "./iassets/images/pasta-4625962_640.jpg",
-        "Salat": "./assets/images/salad-7222402_640.jpg"
+        "pizza": "./assets/images/pasta-4625962_640.jpg",
+        "pasta": "./assets/images/pasta-4625962_640.jpg",
+        "salat": "./assets/images/salad-7222402_640.jpg"
     };

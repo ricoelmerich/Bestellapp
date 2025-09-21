@@ -1,6 +1,6 @@
-function categoryTemplate(dishesIndex, imagePath) {
+function categoryTemplate(actualCategory, imagePath) {
     return `<div class="background-color-white">
-    <h3>${myDishes[dishesIndex].category}</h3>
+    <h3>${capitalize(actualCategory)}</h3>
     <img src="${imagePath}" alt="" class="category-image">
     </div>`
 }
