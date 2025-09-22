@@ -88,3 +88,7 @@ h3{
     position: sticky;
     top: 10px;
 }
+
+.basket-total{
+    font-weight: bold;
+}

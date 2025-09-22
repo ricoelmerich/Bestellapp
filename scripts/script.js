@@ -85,15 +85,17 @@ function renderBasket() {
         total += item.price * item.quantity;
     }
 
-    basketTotalRef.innerHTML = `<strong>Gesamtpreis:</strong> ${total} €`;
+    basketTotalRef.innerHTML = `${total.toFixed(2)} €`;
 }
 
 function order() {
+    let basketRef = document.getElementById('basket');
      const dishesContainer = document.getElementById('dishes-container')
 
-     if (dishesContainer.innerHTML !== "") {
-        dishesContainer.innerHTML = "";
-        dishesContainer.innerHTML = "danke für die Bestellung";
+     if (basket.length > 0) {
+        basket = [];
+        renderBasket();
+        basketRef.innerHTML = '<strong>Danke für die Bestellung</strong>';
      }
 }
 
