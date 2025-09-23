@@ -37,14 +37,14 @@ header{
  .pizza-icon {
     position: absolute;
     bottom: -60px;
-    left: 50%; 
+    right: 50%; 
     width: 120px;
     height: 120px;
     border-radius: 50%;
     z-index: 10; 
-  
+        filter: hue-rotate(25deg) saturate(1.8) brightness(1.18);
 }
-
+  
 .pizza-wrapper {
   position: relative;
 }
@@ -66,6 +66,7 @@ main{
 
 .dishes-container{
    width: calc(100% - 300px);
+   padding-left: 90px;
 }
 
 .category-image{
