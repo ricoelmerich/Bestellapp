@@ -12,10 +12,7 @@ header, footer{
 }
 
 header{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+ 
   display: flex;
   justify-content: space-between;
 }
@@ -37,6 +34,21 @@ header{
     border: none;
  }
 
+ .pizza-icon {
+    position: absolute;
+    bottom: -60px;
+    left: 50%; /* optional: horizontal zentrieren */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* macht das Bild rund */
+    z-index: 10; /* liegt über anderen Elementen */
+  
+}
+
+.pizza-wrapper {
+  position: relative;
+}
+
 main{
     display: flex;
     
@@ -48,7 +60,7 @@ main{
 }
   
 .basket-container, .dishes-container{
-    height: 100vh;
+    
     border: solid 2px black;
 }
 
@@ -91,4 +103,13 @@ h3{
 
 .basket-total{
     font-weight: bold;
+}
+
+#order-btn{
+    background-color: #FF8000;
+    font-size: 28px;
+    height: 36px;
+    width: 150px;
+    margin: 32px 0 ;
+    border-radius: 18px;
 }
