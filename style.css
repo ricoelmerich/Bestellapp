@@ -37,11 +37,11 @@ header{
  .pizza-icon {
     position: absolute;
     bottom: -60px;
-    left: 50%; /* optional: horizontal zentrieren */
+    left: 50%; 
     width: 120px;
     height: 120px;
-    border-radius: 50%; /* macht das Bild rund */
-    z-index: 10; /* liegt über anderen Elementen */
+    border-radius: 50%;
+    z-index: 10; 
   
 }
 
