@@ -21,11 +21,29 @@ header{
     height: 50px;
 }
 
+.menu{
+    background-color: #FF8000;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 10px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .menu-button{
+   background-color: #FF8000;
+}
+.menu-button-img{
     filter: brightness(0) invert(1);
 }
 
- .add-button{
+.add-button{
+    background-color: #fff8f0;
+}
+ .add-button-img{
     width: 40px;
     margin-top: 5px;
     
@@ -38,9 +56,9 @@ header{
 }
 
  button{
-    background-color: white;
+    
     border: none;
-    background-color: #fff8f0;
+    
  }
 
  .pizza-icon {

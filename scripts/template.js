@@ -12,7 +12,7 @@ function dishTemplate(dishesIndex) {
     <br> ${myDishes[dishesIndex].price}€
     <p>${myDishes[dishesIndex].description}</p>
     </div>
-    <button onclick="addToBasket(${dishesIndex})"><img src="assets/favicon/+.png" class="add-button" alt=""></button>
+    <button class="add-button" onclick="addToBasket(${dishesIndex})"><img src="assets/favicon/+.png" class="add-button-img" alt=""></button>
     
     </div>`
 }
