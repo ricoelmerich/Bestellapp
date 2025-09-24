@@ -99,4 +99,9 @@ function order() {
      }
 }
 
+function toggleMenu() {
+    const menuRef = document.getElementById('menu');
+    menuRef.classList.remove('display-none')
+}
+
 
