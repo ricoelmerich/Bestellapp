@@ -25,13 +25,22 @@ header{
     filter: brightness(0) invert(1);
 }
 
- .button{
-    width: 30px;
+ .add-button{
+    width: 40px;
+    margin-top: 5px;
+    
+    transition: transform 0.2s ease;
  }
+
+ .add-button:hover {
+    transform: scale(1.2) ;
+    
+}
 
  button{
     background-color: white;
     border: none;
+    background-color: #fff8f0;
  }
 
  .pizza-icon {
@@ -42,7 +51,7 @@ header{
     height: 120px;
     border-radius: 50%;
     z-index: 10; 
-        filter: hue-rotate(25deg) saturate(1.8) brightness(1.18);
+    filter: hue-rotate(25deg) saturate(1.8) brightness(1.18);
 }
   
 .pizza-wrapper {
@@ -77,18 +86,31 @@ main{
 h3{
     font-size: 48px;
     margin: 0;
-    padding: 60px 0 48px 0;
+    
 }
 
-.dishes{
-    font-size: 32px;
-    font-weight: bold;
+.dishes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 16px;
+    margin: 12px 0;
+    background-color: #fff8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
 }
 
-.background-color-white{
-    background-color: white;
+.dishes:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
 }
+
+.dishes-info{
+    flex-direction: column;
+}
+
+
 
 .basket-container{
     width: 300px;

@@ -1,13 +1,19 @@
 function categoryTemplate(actualCategory, imagePath) {
-    return `<div class="background-color-white">
+    return `<div>
     <h3>${capitalize(actualCategory)}</h3>
     <img src="${imagePath}" alt="" class="category-image">
     </div>`
 }
 
 function dishTemplate(dishesIndex) {
-    return`<div class="background-color-white dishes">${myDishes[dishesIndex].name}
-    <button onclick="addToBasket(${dishesIndex})"><img src="assets/favicon/+.png" class="button" alt=""></button>
+    return`<div class="dishes">
+    <div class="dishes-info">
+    <h3>${myDishes[dishesIndex].name} </h3>
+    <br> ${myDishes[dishesIndex].price}€
+    <p>${myDishes[dishesIndex].description}</p>
+    </div>
+    <button onclick="addToBasket(${dishesIndex})"><img src="assets/favicon/+.png" class="add-button" alt=""></button>
+    
     </div>`
 }
 
