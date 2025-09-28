@@ -33,11 +33,20 @@ header{
     top: 0;
 }
 
+
+
 .menu-button{
    background-color: #FF8000;
 }
+
 .menu-button-img{
     filter: brightness(0) invert(1);
+}
+
+.menu-link{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
 }
 
 .add-button{
