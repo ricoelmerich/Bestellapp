@@ -34,7 +34,9 @@ header{
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 80px;
+    padding: 25px;
+    text-align: center;
 }
 
 
@@ -43,14 +45,33 @@ header{
    background-color: #FF8000;
 }
 
+.menu-button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .menu-button-img{
     filter: brightness(0) invert(1);
+    
 }
+
+
 
 .menu-link{
     font-size: 32px;
     color: white;
     text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.menu-link:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+    text-shadow: 1px 1px 4px;
+}
+
+.display-none{
+    display: none;
 }
 
 .add-button{
@@ -64,7 +85,7 @@ header{
  }
 
  .add-button:hover {
-    transform: scale(1.2) ;
+    transform: scale(1.2);
     
 }
 
