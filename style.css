@@ -120,11 +120,27 @@ main{
     height: 50%;
 }
   
-.basket-container, .dishes-container{
+nav{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
     
-    border: solid 2px black;
+    font-size: 36px;
+    
+    background-color: rgba(0,0,0,0.1);
+
+
 }
 
+nav a{
+    text-decoration: none;
+    color: #FF8000;
+}
+
+nav a:hover{
+    text-shadow: 4px 4px 4px #FF8000;
+}
 .dishes-container{
    width: calc(100% - 300px);
    padding-left: 90px;
