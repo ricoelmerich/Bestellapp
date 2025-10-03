@@ -1,5 +1,6 @@
 let basket = [];
- 
+
+const deliveryFee = 5;
 
 
 
@@ -76,6 +77,7 @@ function decreaseQuantity(dishesIndex) {
 function renderBasket() {
     let basketItemsRef = document.getElementById('basket-items');
     let basketTotalRef = document.getElementById('basket-total');
+    const deliverySwitch = document.getElementById('deliverySwitch');
     basketItemsRef.innerHTML = "";
 
     let total = 0;
@@ -85,6 +87,10 @@ function renderBasket() {
         basketItemsRef.innerHTML += selectedDishTemplate(item);
         total += item.price * item.quantity;
     }
+        if(deliverySwitch.checked){
+            total += deliveryFee;
+        }
+    
 
     basketTotalRef.innerHTML = `${total.toFixed(2)} €`;
 }
@@ -108,10 +114,11 @@ function toggleMenu() {
 function toggleDelivery() {
     let deliveryCostsRef = document.getElementById('delivery-costs');
     const deliverySwitch = document.getElementById('deliverySwitch');
-    const deliveryFee = 5;
+    
 
     if (deliverySwitch.checked) {
         deliveryCostsRef.innerHTML +=`<br>${deliveryFee.toFixed(2)} €`;
+        renderBasket();
     }else{
         deliveryCostsRef.innerHTML = `Lieferung`;
     }
