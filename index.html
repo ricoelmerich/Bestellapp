@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bestellapp</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="scripts/db.js"></script>
     <script src="scripts/template.js"></script>
     <script src="scripts/script.js"></script>
-</head>
-<body onload="renderCategories()">
-    <header><img class="img-header"  src="./assets/logo/logo.png" alt="">
-        <button class="menu-button" onclick="toggleMenu()"><img src="./assets/favicon/hamburger.png" class="menu-button-img" alt=""></button>
-        <div class="menu display-none" id="menu">
-            <a class="menu-link" href="#pizza-section">Pizza</a>
-            <a class="menu-link" href="#pasta-section">Pasta</a>
-            <a class="menu-link" href="#salat-section">Salate</a>
-            <a class="menu-link" href="#footer">über uns</a>
-
-        </div>
+  </head>
+  <body onload="renderCategories()">
+    <header>
+      <img class="img-header" src="./assets/logo/logo.png" alt="" />
+      <button class="menu-button" onclick="toggleMenu()">
+        <img
+          src="./assets/favicon/hamburger.png"
+          class="menu-button-img"
+          alt=""
+        />
+      </button>
+      <div class="menu display-none" id="menu">
+        <a class="menu-link" href="#pizza-section">Pizza</a>
+        <a class="menu-link" href="#pasta-section">Pasta</a>
+        <a class="menu-link" href="#salat-section">Salate</a>
+        <a class="menu-link" href="#footer">über uns</a>
+      </div>
     </header>
     <div class="pizza-wrapper">
-     <img src="assets/images/pasta-3547078_1280.jpg" class="main-img" alt="">
-     <img src="assets/favicon/pizza.png" class="pizza-icon" alt="">
-     </div>
-
-     <div class="restaurant-name"><h1>Pizzicotto - Heiß serviert. Echt italienisch</h1>
-     Bewertung (4,2 von 5 <img class="star" src="./assets/favicon/star.png" alt="">)
+      <img src="assets/images/pasta-3547078_1280.jpg" class="main-img" alt="" />
+      <img src="assets/favicon/pizza.png" class="pizza-icon" alt="" />
     </div>
 
-     <nav>
-        <a href="#pizza-section">Pizza</a>
-        <a href="#pasta-section">Pasta</a>
-        <a href="#salat-section">Salate</a>
-     </nav>
+    <div class="restaurant-name">
+      <h1>Pizzicotto - Heiß serviert. Echt italienisch</h1>
+      Bewertung (4,2 von 5
+      <img class="star" src="./assets/favicon/star.png" alt="" />)
+    </div>
+
+    <nav>
+      <a href="#pizza-section">Pizza</a>
+      <a href="#pasta-section">Pasta</a>
+      <a href="#salat-section">Salate</a>
+    </nav>
+
     <main>
-        
-       
-            <section class="dishes-container" id="dishes-container"></section>
-            <section class="basket-container">
-                <div class="basket" id="basket">
-                    <h2>Warenkorb</h2>
-                    <div id="basket-items"></div>
-                    <div  class="basket-total">Gesamtpreis: <span id="basket-total">0.00 €</span></div>
-                    <button id="order-btn" onclick="order()">Bestellen</button>
+      <section class="dishes-container" id="dishes-container"></section>
+      <section class="basket-container">
+        <div class="basket" id="basket">
+          <h2>Warenkorb</h2>
+          <div id="basket-items"></div>
+          <section class="delivery">
+            <div id="delivery-costs">
+                 Lieferung
                 </div>
-            </section>
-   
+          <label class="switch" >
+            <input onclick="toggleDelivery()"  id="deliverySwitch" type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
+          
+          </section>
+          <div class="basket-total">
+            Gesamtpreis: <span id="basket-total">0.00 €</span>
+          </div>
+          <button id="order-btn" onclick="order()">Bestellen</button>
+        </div>
+      </section>
     </main>
- 
+
     <footer></footer>
-</body>
+  </body>
 </html>

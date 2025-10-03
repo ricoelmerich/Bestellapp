@@ -1,4 +1,5 @@
 let basket = [];
+ 
 
 
 
@@ -90,7 +91,7 @@ function renderBasket() {
 
 function order() {
     let basketRef = document.getElementById('basket');
-     const dishesContainer = document.getElementById('dishes-container')
+     
 
      if (basket.length > 0) {
         basket = [];
@@ -102,6 +103,19 @@ function order() {
 function toggleMenu() {
     const menuRef = document.getElementById('menu');
     menuRef.classList.toggle('display-none')
+}
+
+function toggleDelivery() {
+    let deliveryCostsRef = document.getElementById('delivery-costs');
+    const deliverySwitch = document.getElementById('deliverySwitch');
+    const deliveryFee = 5;
+
+    if (deliverySwitch.checked) {
+        deliveryCostsRef.innerHTML +=`<br>${deliveryFee.toFixed(2)} €`;
+    }else{
+        deliveryCostsRef.innerHTML = `Lieferung`;
+    }
+    
 }
 
 

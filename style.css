@@ -190,7 +190,75 @@ h3{
     flex-direction: column;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
+.switch input {            /* Unsichtbar machen */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;             /* Positioniert sich relativ zur .switch */
+  cursor: pointer;                /* Zeigt Hand-Cursor beim Hover */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;                      /* Deckt die gesamte Fläche ab */
+  background-color: #ccc;         /* Standardfarbe (grau) im "aus"-Zustand */
+  -webkit-transition: .4s;        /* Sanfter Übergang für Safari */
+  transition: .4s;                /* Sanfter Übergang für andere Browser */
+}
+
+.slider:before {
+  position: absolute;             /* Positioniert innerhalb der .slider */
+  content: "";                    /* Pseudo-Element ohne Text */
+  height: 26px;
+  width: 26px;                    /* Größe des Knopfes */
+  left: 4px;
+  bottom: 4px;                    /* Abstand zum Rand */
+  background-color: white;        /* Farbe des Knopfes */
+  -webkit-transition: .4s;
+  transition: .4s;                /* Sanftes Gleiten beim Umschalten */
+}
+
+
+input:checked + .slider {
+  background-color: #2196F3;      /* Farbe des Hintergrunds im "an"-Zustand (blau) */
+}
+
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);      /* Schiebt den weißen Knopf nach rechts */
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.delivery{
+    display: flex;
+    justify-content: space-between;
+}
+
+#delivery-costs{
+    margin-top: 10px;
+}
 
 .basket-container{
     width: 300px;
