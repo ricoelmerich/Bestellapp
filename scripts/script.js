@@ -118,10 +118,12 @@ function toggleDelivery() {
 
     if (deliverySwitch.checked) {
         deliveryCostsRef.innerHTML +=`<br>${deliveryFee.toFixed(2)} €`;
-        renderBasket();
+        
     }else{
         deliveryCostsRef.innerHTML = `Lieferung`;
+        
     }
+    renderBasket();
     
 }
 
