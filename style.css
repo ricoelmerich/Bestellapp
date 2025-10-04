@@ -5,6 +5,7 @@ html{
 body{
     margin: 0;
     padding: 0;
+    width: calc(100% - 300px);
 }
 
 header, footer{
@@ -19,6 +20,10 @@ header{
  
   display: flex;
   justify-content: space-between;
+}
+
+footer{
+    width: 100vw !important;
 }
 
 .img-header{
@@ -154,7 +159,7 @@ nav a:hover{
     text-shadow: 4px 4px 4px #FF8000;
 }
 .dishes-container{
-   width: calc(100% - 300px);
+   
    padding-left: 90px;
 }
 
@@ -179,6 +184,11 @@ h3{
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     transition: transform 0.2s ease;
+}
+
+.selectedDish{
+    display: flex;
+    justify-content: space-between;
 }
 
 .dishes:hover {
@@ -253,7 +263,9 @@ input:checked + .slider:before {
 
 .delivery{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
+    width: 90%;
+    margin-top: 30px;
 }
 
 #delivery-costs{
@@ -263,6 +275,11 @@ input:checked + .slider:before {
 .basket-container{
     width: 300px;
     flex-grow: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 90px;
+    overflow: scroll;
 }
 
 .basket{
@@ -270,6 +287,13 @@ input:checked + .slider:before {
     width: 100%;
     position: sticky;
     top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+#basket-items{
+    width: 90%;
 }
 
 .basket-total{
@@ -283,4 +307,10 @@ input:checked + .slider:before {
     width: 150px;
     margin: 32px 0 ;
     border-radius: 18px;
+   
 }
+
+.flex{
+    flex-grow: 1;
+}
+
