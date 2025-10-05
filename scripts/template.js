@@ -1,6 +1,6 @@
 function categoryTemplate(actualCategory, imagePath) {
     return `<div>
-    <h3 id="${actualCategory}-section">${capitalize(actualCategory)}</h3>
+    <h2 id="${actualCategory}-section">${capitalize(actualCategory)}</h2>
     <img src="${imagePath}" alt="" class="category-image">
     </div>`
 }
