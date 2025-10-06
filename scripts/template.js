@@ -18,7 +18,7 @@ function dishTemplate(dishesIndex) {
 }
 
 function selectedDishTemplate (item){
-    return `<div class="selectedDish">${item.name}, ${item.price}€
+    return `<div class="selectedDish">${item.name}, ${item.price.toFixed(2)}€
     <span class="quantity">x${item.quantity}<button onclick="decreaseQuantity(${item.index})"><img src="assets/favicon/minus-1270000_640.png" class="basket-quantity-button"></button>
     <button onclick="increaseQuantity(${item.index})"><img src="assets/favicon/+.png" class="basket-quantity-button"></button></span>
     </div>`
