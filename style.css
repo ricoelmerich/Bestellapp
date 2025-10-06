@@ -5,7 +5,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    width: calc(100% - 300px);
+   
 }
 
 header, footer{
@@ -14,6 +14,11 @@ header, footer{
     display: flex;
     align-items: center;
     padding: 0 60px;
+    width: 100%;
+}
+
+main{
+     width: calc(100% - 300px);
 }
 
 header{
@@ -22,9 +27,7 @@ header{
   justify-content: space-between;
 }
 
-footer{
-    width: 100vw !important;
-}
+
 
 .img-header{
     height: 50px;
@@ -109,7 +112,19 @@ footer{
  button{
     
     border: none;
-    
+    background-color: white;
+ }
+
+  button:hover{
+    cursor: pointer;
+  }
+
+ .basket-quantity-button{
+    width: 20px;
+ }
+
+ .quantity{
+    display: flex;
  }
 
  .pizza-icon {
@@ -150,10 +165,12 @@ nav{
 nav a{
     text-decoration: none;
     color: #FF8000;
+    
 }
 
 nav a:hover{
-    text-shadow: 4px 4px 4px #FF8000;
+   
+    background-color: rgba(0,0,0,0.2);
 }
 .dishes-container{
    
@@ -161,8 +178,10 @@ nav a:hover{
 }
 
 .category-image{
-   width: 50%;
-   height: 200px;
+   
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
 
 h2{
@@ -278,7 +297,7 @@ input:checked + .slider:before {
     width: 300px;
     flex-grow: 1;
     position: fixed;
-    top: 0;
+    top: 90px;
     right: 0;
     bottom: 90px;
     overflow: scroll;
@@ -294,12 +313,18 @@ input:checked + .slider:before {
     align-items: center;
 }   
 
+.basket h2{
+    margin-top: 0;
+    font-size: 46px;
+}
+
 #basket-items{
     width: 90%;
 }
 
 .basket-total{
     font-weight: bold;
+    margin-top: 40px;
 }
 
 #order-btn{
