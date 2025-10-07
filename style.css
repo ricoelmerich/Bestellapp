@@ -341,3 +341,7 @@ input:checked + .slider:before {
     flex-grow: 1;
 }
 
+footer img{
+    width: 32px;
+    filter: hue-rotate(88deg) saturate(62) brightness(2);
+}
