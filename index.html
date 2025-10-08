@@ -9,7 +9,7 @@
     <script src="scripts/template.js"></script>
     <script src="scripts/script.js"></script>
   </head>
-  <body onload="renderCategories()">
+  <body onload="renderCategories()" onscroll="removeOverlayOnScroll()" onclick="removeOverlay(event)">
     <header id="header">
       <img class="img-header" src="./assets/logo/logo.png" alt="" />
       <button class="menu-button" onclick="toggleMenu()">
@@ -69,6 +69,6 @@
       </section>
     </main>
 
-    <footer><a href="#header"><img src="./assets/favicon/house-2374925_640.png" alt=""></a></footer>
+    <footer><a href="header"><img src="./assets/favicon/house-2374925_640.png" alt=""></a></footer>
   </body>
 </html>

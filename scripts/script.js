@@ -107,6 +107,7 @@ function order() {
 }
 
 function toggleMenu() {
+    event.stopPropagation();
     const menuRef = document.getElementById('menu');
     menuRef.classList.toggle('display-none')
 }
@@ -126,5 +127,20 @@ function toggleDelivery() {
     renderBasket();
     
 }
+
+function removeOverlay(event) {
+  const menuRef = document.getElementById("menu");
+  if (!menuRef.contains(event.target)) {
+    menuRef.classList.add("display-none");
+}
+}
+
+function removeOverlayOnScroll() {
+  const menuRef = document.getElementById("menu");
+  if (!menuRef.classList.contains("display-none")) {
+    menuRef.classList.add("display-none");
+  }
+}
+
 
 
