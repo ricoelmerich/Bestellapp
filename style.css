@@ -18,7 +18,7 @@ header, footer{
 }
 
 main{
-     width: calc(100% - 300px);
+     width: calc(100% - 350px);
 }
 
 header{
@@ -130,7 +130,7 @@ header{
  .pizza-icon {
     position: absolute;
     bottom: -60px;
-    left: calc(50% - 30px);
+    left: calc(50% - 350px);
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -294,8 +294,8 @@ input:checked + .slider:before {
 }
 
 .basket-container{
-    width: 300px;
-    flex-grow: 1;
+    width: 350px;
+    
     position: fixed;
     top: 90px;
     right: 0;
