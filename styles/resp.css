@@ -1,0 +1,9 @@
+@media (max-width: 900px){
+    .basket-container{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+}
