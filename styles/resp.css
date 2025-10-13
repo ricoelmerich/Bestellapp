@@ -1,9 +1,24 @@
-@media (max-width: 900px){
-    .basket-container{
-        display: none;
-    }
+@media (max-width: 900px) {
+  .basket-container {
+    display: none;
+  }
 
-    main{
-        width: 100%;
-    }
+  main {
+    width: 100%;
+  }
+
+  .basket-toggle {
+    font-weight: 600;
+    position: fixed;
+    right: 0;
+    padding: 20px;
+    font-size: 32px;
+    background-color: #ff8000;
+
+    cursor: pointer;
+
+    left: 0;
+    bottom: 0;
+    height: 80px;
+  }
 }
