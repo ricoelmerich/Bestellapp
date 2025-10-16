@@ -134,7 +134,7 @@ header{
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    z-index: 10; 
+    z-index: 1; 
     filter: hue-rotate(25deg) saturate(1.8) brightness(1.18);
 }
   
@@ -207,7 +207,7 @@ h3{
     transition: transform 0.2s ease;
 }
 
-.selectedDish{
+.selected-dish{
     display: flex;
     justify-content: space-between;
 }
