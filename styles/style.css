@@ -293,24 +293,20 @@ input:checked + .slider:before {
     margin-top: 10px;
 }
 
-.basket-container{
-    width: 350px;
-    
-    position: fixed;
-    top: 90px;
-    right: 0;
-    bottom: 90px;
-    overflow: scroll;
-}
+
 
 .basket{
    min-height: 100px;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+     top: 90px;
+    right: 0;
+    bottom: 90px;
+    width: 350px;
 }   
 
 .basket h2{

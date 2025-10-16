@@ -15,7 +15,7 @@ let myDishes = [
       },
       { 
         "category": "pizza",
-        "name": "Vegetariana",
+        "name": "Vegetaria",
         "price": 10.20,
         "description": "Bunte Gemüsevielfalt auf Tomatensauce und Mozzarella.",
         "quantity": 0

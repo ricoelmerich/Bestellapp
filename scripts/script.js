@@ -142,5 +142,17 @@ function removeOverlayOnScroll() {
   }
 }
 
+function toggleBasket(){
+  let basket = document.getElementById('basket');
+
+    if (basket.classList.contains('visible')) {
+    basket.classList.remove('visible');
+    basket.style.display = 'none';
+  } else {
+    basket.classList.add('visible');
+    basket.style.display = 'flex';
+  }
+}
+
 
 
