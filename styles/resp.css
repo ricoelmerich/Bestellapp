@@ -1,31 +1,28 @@
 @media (max-width: 900px) {
- 
- 
-
   main {
     width: 100%;
   }
 
-   .basket {
+  .basket {
     display: none;
     position: fixed;
-            width: 100%;
-        height: 100%;
-        background-color: #fff8f0;
-        top: 0;
-        font-size: 32px;
-        z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #fff8f0;
+    top: 0;
+    font-size: 32px;
+    z-index: 2;
   }
 
   .basket-quantity-button {
     width: 32px;
-}
+  }
 
-#order-btn{
+  #order-btn {
     border-radius: 48px;
     margin-top: 96px;
     height: 48px;
-}
+  }
 
   .basket-toggle {
     font-weight: 500;
@@ -44,9 +41,32 @@
     z-index: 3;
   }
 
-  .selected-dish button{
+  .selected-dish {
+    margin-top: 20px;
+  }
+
+  .selected-dish button {
     background-color: #fff8f0;
+  }
+
+  .position-top {
+    position: fixed;
+    top: 0;
   }
 }
 
+@media (min-width: 900px) {
+  .basket {
+    display: flex !important; /* entfernt display none ab Breite > 900px */
+  }
+}
 
+@media (max-width: 675px) {
+    h2{
+            text-align: center;
+    }
+
+    .dishes-container{
+        padding: 0;
+    }
+}

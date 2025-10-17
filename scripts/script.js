@@ -144,6 +144,7 @@ function removeOverlayOnScroll() {
 
 function toggleBasket(){
   let basket = document.getElementById('basket');
+  
 
     if (basket.classList.contains('visible')) {
     basket.classList.remove('visible');
@@ -151,8 +152,14 @@ function toggleBasket(){
   } else {
     basket.classList.add('visible');
     basket.style.display = 'flex';
+    
   }
+  moveToggleBasketBtn();
 }
 
+function moveToggleBasketBtn() {
+    let basketToggleBtn = document.getElementById('basket-toggle');
+    basketToggleBtn.classList.toggle('position-top');
+}
 
 
