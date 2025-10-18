@@ -17,6 +17,10 @@ header, footer{
    
 }
 
+footer{
+        margin-top: 50px;
+}
+
 main{
      width: calc(100% - 350px);
 }
@@ -152,8 +156,8 @@ header{
 nav{
     margin-top: 100px;
     display: flex;
-    justify-content: center;
-    gap: 15%;
+    justify-content: space-around;
+    
     
     font-size: 36px;
     
