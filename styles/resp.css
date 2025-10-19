@@ -58,6 +58,10 @@
   .position-top {
     position: fixed;
     top: 0;
+     width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
