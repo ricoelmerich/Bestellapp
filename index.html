@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bestellapp</title>
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/resp.css" />
+    <link rel="stylesheet" href="styles/assets.css" />
+    <link rel="stylesheet" href="styles/effects.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
     <script src="scripts/db.js"></script>
     <script src="scripts/template.js"></script>
     <script src="scripts/script.js"></script>
   </head>
-  <body onload="renderCategories()" onscroll="removeOverlayOnScroll()" onclick="removeOverlay(event)">
+  <body
+    onload="renderCategories()"
+    onscroll="removeOverlayOnScroll()"
+    onclick="removeOverlay(event)"
+  >
     <header id="header">
       <img class="img-header" src="./assets/logo/logo.png" alt="" />
       <button class="menu-button" onclick="toggleMenu()">
@@ -29,51 +36,62 @@
       </div>
     </header>
     <main>
-    <div class="pizza-wrapper">
-      <img src="assets/images/pasta-3547078_1280.jpg" class="main-img" alt="" />
-      <img src="assets/favicon/pizza.png" class="pizza-icon" alt="" />
-    </div>
+      <div class="pizza-wrapper">
+        <img
+          src="assets/images/pasta-3547078_1280.jpg"
+          class="main-img"
+          alt=""
+        />
+        <img src="assets/favicon/pizza.png" class="pizza-icon" alt="" />
+      </div>
 
-    <div class="restaurant-name">
-      <h1>Pizzicotto - Heiß serviert. Echt italienisch</h1>
-      Bewertung (4,2 von 5
-      <img class="star" src="./assets/favicon/star.png" alt="" />)
-    </div>
+      <div class="restaurant-name">
+        <h1>Pizzicotto - Heiß serviert. Echt italienisch</h1>
+        Bewertung (4,2 von 5
+        <img class="star" src="./assets/favicon/star.png" alt="" />)
+      </div>
 
-    <nav>
-      <a href="#pizza-section">Pizza</a>
-      <a href="#pasta-section">Pasta</a>
-      <a href="#salat-section">Salate</a>
-    </nav>
+      <nav>
+        <a href="#pizza-section">Pizza</a>
+        <a href="#pasta-section">Pasta</a>
+        <a href="#salat-section">Salate</a>
+      </nav>
 
-    
       <section class="dishes-container" id="dishes-container"></section>
-      
-        <div class="basket" id="basket">
-          <h2>Warenkorb</h2>
-          <div id="basket-items"></div>
-          <section class="delivery">
-            <div id="delivery-costs">
-                 Lieferung
-                 
-                </div>
-          <label class="switch" >
-            <input onclick="toggleDelivery()"  id="deliverySwitch" type="checkbox"/>
+
+      <div class="basket" id="basket">
+        <h2>Warenkorb</h2>
+        <div id="basket-items"></div>
+        <section class="delivery">
+          <div id="delivery-costs">Lieferung</div>
+          <label class="switch">
+            <input
+              onclick="toggleDelivery()"
+              id="deliverySwitch"
+              type="checkbox"
+            />
             <span class="slider round"></span>
           </label>
-          
-          </section>
-          <div class="basket-total">
-            Gesamtpreis: <span id="basket-total">0.00 €</span>
-          </div>
-          <button id="order-btn" onclick="order()">Bestellen</button>
+        </section>
+        <div class="basket-total">
+          Gesamtpreis: <span id="basket-total">0.00 €</span>
         </div>
-      
-      <button id="basket-toggle" class="basket-toggle display-none" onclick="toggleBasket()">
-   Warenkorb
-</button>
+        <button id="order-btn" onclick="order()">Bestellen</button>
+      </div>
+
+      <button
+        id="basket-toggle"
+        class="basket-toggle display-none"
+        onclick="toggleBasket()"
+      >
+        Warenkorb
+      </button>
     </main>
 
-    <footer><a href="#header"><img src="./assets/favicon/house-2374925_640.png" alt=""></a></footer>
+    <footer id="footer">
+      <a href="#header"
+        ><img src="./assets/favicon/house-2374925_640.png" alt=""
+      /></a>
+    </footer>
   </body>
 </html>

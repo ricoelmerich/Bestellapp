@@ -1,0 +1,57 @@
+.menu-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.menu-link:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+  text-shadow: 1px 1px 4px;
+}
+
+.add-button:hover {
+  transform: scale(1.2);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dishes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.slider:before {
+  position: absolute; /* Positioniert innerhalb der .slider */
+  content: ""; /* Pseudo-Element ohne Text */
+  height: 26px;
+  width: 26px; /* Größe des Knopfes */
+  left: 4px;
+  bottom: 4px; /* Abstand zum Rand */
+  background-color: white; /* Farbe des Knopfes */
+  -webkit-transition: 0.4s;
+  transition: 0.4s; /* Sanftes Gleiten beim Umschalten */
+}
+
+input:checked + .slider {
+  background-color: #2196f3; /* Farbe des Hintergrunds im "an"-Zustand (blau) */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); /* Schiebt den weißen Knopf nach rechts */
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

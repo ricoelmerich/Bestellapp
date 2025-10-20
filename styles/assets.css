@@ -1,0 +1,99 @@
+.img-header {
+  height: 50px;
+}
+
+.star {
+  width: 18px;
+  filter: brightness(1.15);
+  position: relative;
+  top: 4px;
+}
+
+.menu-button {
+  background-color: #ff8000;
+}
+
+.add-button {
+  background-color: #fff8f0;
+}
+.add-button-img {
+  width: 40px;
+  margin-top: 5px;
+
+  transition: transform 0.2s ease;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+.basket-quantity-button {
+  width: 20px;
+}
+
+.pizza-icon {
+  position: absolute;
+  bottom: -60px;
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: 1;
+  filter: hue-rotate(25deg) saturate(1.8) brightness(1.18);
+}
+
+.main-img {
+  width: 100%;
+  height: 50%;
+}
+
+.category-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  /* Unsichtbar machen */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute; /* Positioniert sich relativ zur .switch */
+  cursor: pointer; /* Zeigt Hand-Cursor beim Hover */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Deckt die gesamte Fläche ab */
+  background-color: #ccc; /* Standardfarbe (grau) im "aus"-Zustand */
+  -webkit-transition: 0.4s; /* Sanfter Übergang für Safari */
+  transition: 0.4s; /* Sanfter Übergang für andere Browser */
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+#order-btn {
+  background-color: #ff8000;
+  font-size: 28px;
+  height: 36px;
+  width: 150px;
+  margin: 32px 0;
+  border-radius: 18px;
+}
+
+footer img {
+  width: 32px;
+  filter: hue-rotate(88deg) saturate(62) brightness(2);
+}

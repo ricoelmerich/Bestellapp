@@ -1,367 +1,167 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-   font-family: "Lato", sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
-header, footer{
-    height: 90px;
-    background-color: #FF8000;
-    display: flex;
-    align-items: center;
-    padding: 0 60px;
-   
+header,
+footer {
+  height: 90px;
+  background-color: #ff8000;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
 }
 
-footer{
-        margin-top: 50px;
+footer {
+  margin-top: 50px;
 }
 
-main{
-     width: calc(100% - 350px);
+main {
+  width: calc(100% - 350px);
 }
 
-header{
- 
+header {
   display: flex;
   justify-content: space-between;
 }
 
-
-
-.img-header{
-    height: 50px;
+.restaurant-name {
+  text-align: center;
+  margin-top: 100px;
 }
 
-.restaurant-name{
-    text-align: center;
-    margin-top: 100px;
+.menu {
+  background-color: #ff8000;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  gap: 10px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  padding: 25px;
+  text-align: center;
 }
 
-.star{
-    width: 18px;
-    filter: brightness(1.15);
-    position: relative;
-    top: 4px;
+.menu-button-img {
+  filter: brightness(0) invert(1);
 }
 
-.menu{
-    background-color: #FF8000;
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    gap: 10px;
-    z-index: 1;
-    position: absolute;
-    right: 0;
-    top: 80px;
-    padding: 25px;
-    text-align: center;
+.menu-link {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
-
-
-.menu-button{
-   background-color: #FF8000;
+.display-none {
+  display: none;
 }
 
-.menu-button:hover{
-    cursor: pointer;
-    transform: scale(1.2);
+.quantity {
+  display: flex;
 }
 
-.menu-button-img{
-    filter: brightness(0) invert(1);
-    
-}
-
-
-
-.menu-link{
-    font-size: 32px;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.menu-link:hover{
-    transform: scale(1.2);
-    transition: transform 0.2s ease;
-    text-shadow: 1px 1px 4px;
-}
-
-.display-none{
-    display: none;
-}
-
-.add-button{
-    background-color: #fff8f0;
-}
- .add-button-img{
-    width: 40px;
-    margin-top: 5px;
-    
-    transition: transform 0.2s ease;
- }
-
- .add-button:hover {
-    transform: scale(1.2);
-    
-}
-
- button{
-    
-    border: none;
-    background-color: white;
- }
-
-  button:hover{
-    cursor: pointer;
-  }
-
- .basket-quantity-button{
-    width: 20px;
- }
-
- .quantity{
-    display: flex;
- }
-
- .pizza-icon {
-    position: absolute;
-    bottom: -60px;
-    left: calc(50% - 60px);
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    z-index: 1; 
-    filter: hue-rotate(25deg) saturate(1.8) brightness(1.18);
-}
-  
 .pizza-wrapper {
   position: relative;
 }
 
+nav {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
 
+  font-size: 36px;
 
-.main-img{
-    width: 100%;
-    height: 50%;
-}
-  
-nav{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
-    
-    
-    font-size: 36px;
-    
-    background-color: rgba(0,0,0,0.1);
-
-
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-nav a{
-    text-decoration: none;
-    color: #FF8000;
-    
+nav a {
+  text-decoration: none;
+  color: #ff8000;
 }
 
-nav a:hover{
-   
-    background-color: rgba(0,0,0,0.2);
-}
-.dishes-container{
-   
-   padding-left: 90px;
+.dishes-container {
+  padding-left: 90px;
 }
 
-.category-image{
-   
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
+h2 {
+  font-size: 56px;
+  margin: 60px 0 20px 0;
+  font-family: "Italiana", sans-serif;
 }
 
-@font-face {
-  font-family: "Italiana";
-  src: url("../assets/fonts//Italiana/Italiana-Regular.ttf") format("woff2");
+h3 {
+  font-size: 40px;
+  margin: 0;
+  font-family: "Italiana", sans-serif;
 }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../assets/fonts/Lato/Lato-Regular.ttf") format("woff2");
-}
-
-
-h2{
-    font-size: 56px;
-    margin: 60px 0 20px 0;
-    font-family: "Italiana", sans-serif;
-    
-}
-
-h3{
-    font-size: 40px;
-    margin: 0;
-    font-family: "Italiana", sans-serif;
-    
-    
-    
-}
-
 
 .dishes {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 16px;
-    margin: 12px 0;
-    background-color: #fff8f0;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  margin: 12px 0;
+  background-color: #fff8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
 }
 
-.selected-dish{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    align-items: flex-start;
+.selected-dish {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: flex-start;
 }
 
-.dishes:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+.dishes-info {
+  flex-direction: column;
 }
 
-.dishes-info{
-    flex-direction: column;
+.delivery {
+  display: flex;
+  justify-content: space-between !important;
+  width: 90%;
+  margin-top: 30px;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+#delivery-costs {
+  margin-top: 10px;
 }
 
-.switch input {            /* Unsichtbar machen */
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;             /* Positioniert sich relativ zur .switch */
-  cursor: pointer;                /* Zeigt Hand-Cursor beim Hover */
-  top: 0;
-  left: 0;
+.basket {
+  min-height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 90px;
   right: 0;
-  bottom: 0;                      /* Deckt die gesamte Fläche ab */
-  background-color: #ccc;         /* Standardfarbe (grau) im "aus"-Zustand */
-  -webkit-transition: .4s;        /* Sanfter Übergang für Safari */
-  transition: .4s;                /* Sanfter Übergang für andere Browser */
+  bottom: 90px;
+  width: 350px;
 }
 
-.slider:before {
-  position: absolute;             /* Positioniert innerhalb der .slider */
-  content: "";                    /* Pseudo-Element ohne Text */
-  height: 26px;
-  width: 26px;                    /* Größe des Knopfes */
-  left: 4px;
-  bottom: 4px;                    /* Abstand zum Rand */
-  background-color: white;        /* Farbe des Knopfes */
-  -webkit-transition: .4s;
-  transition: .4s;                /* Sanftes Gleiten beim Umschalten */
+.basket h2 {
+  margin-top: 0;
+  font-size: 46px;
+  font-family: "Lato", sans-serif;
 }
 
-
-input:checked + .slider {
-  background-color: #2196F3;      /* Farbe des Hintergrunds im "an"-Zustand (blau) */
+#basket-items {
+  width: 90%;
 }
 
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);      /* Schiebt den weißen Knopf nach rechts */
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.delivery{
-    display: flex;
-    justify-content: space-between !important;
-    width: 90%;
-    margin-top: 30px;
-}
-
-#delivery-costs{
-    margin-top: 10px;
-}
-
-
-
-.basket{
-   min-height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     top: 90px;
-    right: 0;
-    bottom: 90px;
-    width: 350px;
-}   
-
-.basket h2{
-    margin-top: 0;
-    font-size: 46px;
-    font-family: "Lato", sans-serif;
-}
-
-#basket-items{
-    width: 90%;
-}
-
-.basket-total{
-    font-weight: bold;
-    margin-top: 40px;
-}
-
-#order-btn{
-    background-color: #FF8000;
-    font-size: 28px;
-    height: 36px;
-    width: 150px;
-    margin: 32px 0 ;
-    border-radius: 18px;
-   
-}
-
-.flex{
-    flex-grow: 1;
-}
-
-footer img{
-    width: 32px;
-    filter: hue-rotate(88deg) saturate(62) brightness(2);
+.basket-total {
+  font-weight: bold;
+  margin-top: 40px;
 }

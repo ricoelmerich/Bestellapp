@@ -5,6 +5,7 @@ function categoryTemplate(actualCategory, imagePath) {
     </div>`
 }
 
+
 function dishTemplate(dishesIndex) {
     return`<div class="dishes">
     <div class="dishes-info">
@@ -16,6 +17,7 @@ function dishTemplate(dishesIndex) {
     
     </div>`
 }
+
 
 function selectedDishTemplate (item){
     return `<div class="selected-dish">${item.name} ${item.price.toFixed(2)} €
