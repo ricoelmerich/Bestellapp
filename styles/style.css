@@ -165,3 +165,11 @@ h3 {
   font-weight: bold;
   margin-top: 40px;
 }
+
+.scrollbar{
+    overflow-y: scroll;
+}
+
+.remove-scrollbar{
+    overflow-y: hidden;
+}

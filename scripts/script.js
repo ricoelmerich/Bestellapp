@@ -146,13 +146,17 @@ function removeOverlayOnScroll() {
 
 function toggleBasket() {
   let basket = document.getElementById("basket");
-
+  let body = document.body; 
   if (basket.classList.contains("visible")) {
     basket.classList.remove("visible");
+     basket.classList.remove("scrollbar");
+    body.classList.remove("remove-scrollbar");
     basket.style.display = "none";
   } else {
     basket.classList.add("visible");
     basket.style.display = "flex";
+    basket.classList.add("scrollbar");
+    body.classList.add("remove-scrollbar");
   }
   moveToggleBasketBtn();
 }
@@ -162,3 +166,4 @@ function moveToggleBasketBtn() {
   let basketToggleBtn = document.getElementById("basket-toggle");
   basketToggleBtn.classList.toggle("position-top");
 }
+
