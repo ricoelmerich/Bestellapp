@@ -61,6 +61,10 @@
     margin-left: 0;
     margin-right: 0;
   }
+
+    .dishes-container {
+    padding: 0;
+  }
 }
 
 @media (min-width: 900px) {
@@ -72,10 +76,6 @@
 @media (max-width: 675px) {
   h2 {
     text-align: center;
-  }
-
-  .dishes-container {
-    padding: 0;
   }
 }
 

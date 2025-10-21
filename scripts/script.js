@@ -2,9 +2,6 @@ let basket = [];
 
 const deliveryFee = 5;
 
-function init() {
-  renderCategories();
-}
 
 function renderCategories() {
   const categoryRef = document.getElementById("dishes-container");
