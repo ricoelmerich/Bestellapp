@@ -139,7 +139,6 @@ h3 {
 
 .basket {
   min-height: 100px;
-  width: 100%;
   position: fixed;
   top: 10px;
   display: flex;
