@@ -62,22 +62,21 @@ button {
 }
 
 .switch input {
-  /* Unsichtbar machen */
   opacity: 0;
   width: 0;
   height: 0;
 }
 
 .slider {
-  position: absolute; /* Positioniert sich relativ zur .switch */
-  cursor: pointer; /* Zeigt Hand-Cursor beim Hover */
+  position: absolute; 
+  cursor: pointer; 
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; /* Deckt die gesamte Fläche ab */
-  background-color: #ccc; /* Standardfarbe (grau) im "aus"-Zustand */
-  -webkit-transition: 0.4s; /* Sanfter Übergang für Safari */
-  transition: 0.4s; /* Sanfter Übergang für andere Browser */
+  bottom: 0; 
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; 
 }
 
 .slider.round {

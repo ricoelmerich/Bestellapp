@@ -22,7 +22,7 @@ function renderCategories() {
 
 
 function capitalize(word) {
-  return word.charAt(0).toUpperCase() + word.slice(1); // Kategorien groß schreiben
+  return word.charAt(0).toUpperCase() + word.slice(1); 
 }
 
 
@@ -64,11 +64,17 @@ function decreaseQuantity(dishesIndex) {
     if (basket[basketIndex].index === dishesIndex) {
       basket[basketIndex].quantity--;
       if (basket[basketIndex].quantity <= 0) {
-        basket.splice(basketIndex, 1); // Gericht entfernen
+        basket.splice(basketIndex, 1); 
       }
       break;
     }
   }
+  renderBasket();
+}
+
+function deleteDish(dishesIndex) {
+  
+  basket[dishesIndex] = "";
   renderBasket();
 }
 
