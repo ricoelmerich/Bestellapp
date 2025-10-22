@@ -19,7 +19,7 @@
   }
 
   .basket-quantity-button {
-    width: 32px;
+    width: 32px !important;
   }
 
   #order-btn {
@@ -65,6 +65,10 @@
     .dishes-container {
     padding: 0;
   }
+
+  .quantity{
+   margin-left: 20px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -99,5 +103,9 @@
 
   .menu {
     z-index: 2;
+  }
+
+   .basket-quantity-button {
+    width: 20px !important;
   }
 }

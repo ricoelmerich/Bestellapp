@@ -32,6 +32,10 @@ button {
   width: 20px;
 }
 
+.trash-button{
+  width: 15px;
+}
+
 .pizza-icon {
   position: absolute;
   bottom: -60px;

@@ -19,10 +19,10 @@ function dishTemplate(dishesIndex) {
 }
 
 
-function selectedDishTemplate (item){
+function selectedDishTemplate (item, basketIndex){
     return `<div class="selected-dish">${item.name} ${item.price.toFixed(2)} €
     <span class="quantity">x${item.quantity}<button onclick="decreaseQuantity(${item.index})"><img src="assets/favicon/minus-1270000_640.png" class="basket-quantity-button"></button>
     <button onclick="increaseQuantity(${item.index})"><img src="assets/favicon/+.png" class="basket-quantity-button"></button>
-    <button id="${item}-dish" onclick="deleteDish(${item.index})">X</button></span>
+    <button onclick="deleteDish(${basketIndex})"><img src="assets/favicon/trash.png" class="trash-button"></button></span>
     </div>`
 }

@@ -72,11 +72,11 @@ function decreaseQuantity(dishesIndex) {
   renderBasket();
 }
 
-function deleteDish(dishesIndex) {
-  
-  basket[dishesIndex] = "";
-  renderBasket();
+function deleteDish(basketIndex) {
+  basket.splice(basketIndex, 1); 
+  renderBasket();          
 }
+
 
 
 function renderBasket() {
@@ -89,7 +89,7 @@ function renderBasket() {
 
   for (let basketIndex = 0; basketIndex < basket.length; basketIndex++) {
     let item = basket[basketIndex];
-    basketItemsRef.innerHTML += selectedDishTemplate(item);
+    basketItemsRef.innerHTML += selectedDishTemplate(item, basketIndex);
     total += item.price * item.quantity;
   }
   if (deliverySwitch.checked) {
