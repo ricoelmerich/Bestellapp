@@ -22,6 +22,10 @@ footer {
 }
 
 main {
+  display: flex;
+}
+
+.main-content{
   width: calc(100% - 350px);
 }
 
@@ -137,17 +141,19 @@ h3 {
   margin-top: 10px;
 }
 
+.basket-container{
+  justify-content: center;
+  width: 350px;
+}
+
 .basket {
   min-height: 100px;
-  position: fixed;
+  position: sticky;
   top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  top: 90px;
-  right: 0;
-  bottom: 90px;
-  width: 350px;
+  width: 100%;
 }
 
 .basket h2 {

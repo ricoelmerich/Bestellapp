@@ -148,17 +148,17 @@ function removeOverlayOnScroll() {
 
 
 function toggleBasket() {
-  let basket = document.getElementById("basket");
+  let basketContainer = document.getElementById("basket-container");
   let body = document.body; 
-  if (basket.classList.contains("visible")) {
-    basket.classList.remove("visible");
-     basket.classList.remove("scrollbar");
+  if (basketContainer.classList.contains("visible")) {
+    basketContainer.classList.remove("visible");
+     basketContainer.classList.remove("scrollbar");
     body.classList.remove("remove-scrollbar");
-    basket.style.display = "none";
+    basketContainer.style.display = "none";
   } else {
-    basket.classList.add("visible");
-    basket.style.display = "flex";
-    basket.classList.add("scrollbar");
+    basketContainer.classList.add("visible");
+    basketContainer.style.display = "flex";
+    basketContainer.classList.add("scrollbar");
     body.classList.add("remove-scrollbar");
   }
   moveToggleBasketBtn();
