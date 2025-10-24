@@ -64,10 +64,6 @@ header {
   margin-bottom: 10px;
 }
 
-.display-none-important {
-  display: none !important;
-}
-
 .display-none {
   display: none;
 }
@@ -84,9 +80,7 @@ nav {
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
-
   font-size: 36px;
-
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -146,7 +140,6 @@ h3 {
 }
 
 .basket-container {
-  justify-content: center;
   width: 350px;
 }
 
