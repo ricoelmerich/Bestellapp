@@ -148,19 +148,7 @@ function removeOverlayOnScroll() {
 
 
 function toggleBasket() {
-  let basketContainer = document.getElementById("basket-container");
-  let body = document.body; 
-  if (basketContainer.classList.contains("visible")) {
-    basketContainer.classList.remove("visible");
-     basketContainer.classList.remove("scrollbar");
-    body.classList.remove("remove-scrollbar");
-    basketContainer.style.display = "none";
-  } else {
-    basketContainer.classList.add("visible");
-    basketContainer.style.display = "flex";
-    basketContainer.classList.add("scrollbar");
-    body.classList.add("remove-scrollbar");
-  }
+ document.body.classList.toggle("basket-open");
   moveToggleBasketBtn();
 }
 
@@ -168,5 +156,10 @@ function toggleBasket() {
 function moveToggleBasketBtn() {
   let basketToggleBtn = document.getElementById("basket-toggle");
   basketToggleBtn.classList.toggle("position-top");
+  if (basketToggleBtn.classList.contains("position-top")) {
+    basketToggleBtn.innerHTML = "Warenkorb schließen";
+  }else{
+    basketToggleBtn.innerHTML = "Warenkorb";
+  }
 }
 

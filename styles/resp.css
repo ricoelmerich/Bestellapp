@@ -3,23 +3,34 @@
     flex-direction: column;
   }
 
-  .main-content{
+  .main-content {
     width: 100%;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   .basket-container {
     display: none;
-  
-    position: fixed;
+
     width: 100%;
     height: 100%;
     background-color: #fff8f0;
     top: 0;
     font-size: 32px;
     z-index: 2;
+    overflow-y: scroll;
   }
 
-  
+  body.basket-open .basket-container {
+    display: flex;
+    position: fixed;
+  }
+
+  body.basket-open {
+    overflow-y: hidden;
+  }
 
   .basket strong {
     margin-top: 100px;
@@ -69,18 +80,12 @@
     margin-right: 0;
   }
 
-    .dishes-container {
+  .dishes-container {
     padding: 0;
   }
 
-  .quantity{
-   margin-left: 20px;
-  }
-}
-
-@media (min-width: 900px) {
-  .basket-container {
-    display: flex !important; 
+  .quantity {
+    margin-left: 20px;
   }
 }
 
@@ -112,7 +117,7 @@
     z-index: 2;
   }
 
-   .basket-quantity-button {
+  .basket-quantity-button {
     width: 20px !important;
   }
 }

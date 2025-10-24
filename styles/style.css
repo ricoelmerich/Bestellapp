@@ -25,7 +25,7 @@ main {
   display: flex;
 }
 
-.main-content{
+.main-content {
   width: calc(100% - 350px);
 }
 
@@ -62,6 +62,10 @@ header {
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
+}
+
+.display-none-important {
+  display: none !important;
 }
 
 .display-none {
@@ -141,7 +145,7 @@ h3 {
   margin-top: 10px;
 }
 
-.basket-container{
+.basket-container {
   justify-content: center;
   width: 350px;
 }
@@ -171,10 +175,10 @@ h3 {
   margin-top: 40px;
 }
 
-.scrollbar{
-    overflow-y: scroll;
+.scrollbar {
+  overflow-y: scroll;
 }
 
-.remove-scrollbar{
-    overflow-y: hidden;
+.remove-scrollbar {
+  overflow-y: hidden;
 }
